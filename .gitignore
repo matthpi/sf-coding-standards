@@ -1,0 +1,22 @@
+# Salesforce / VS Code
+.sfdx/
+.sf/
+.localdevserver/
+.vscode/
+*.log
+.DS_Store
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Test results
+coverage/
+test-results/
+*.testresults
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
