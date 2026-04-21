@@ -54,6 +54,8 @@ wiredHierarchy(result) {
 - Throw `IllegalArgumentException` for invalid inputs
 - Use `with sharing` to enforce record-level security
 
+> **Logging Exception**: Controllers that surface errors to LWC via `AuraHandledException` do not require internal Nebula Logger calls. Logging is only required when a controller intentionally swallows an exception.
+
 ```apex
 @AuraEnabled(cacheable=true)
 public static List<MyWrapper> getData(Id recordId, String config)

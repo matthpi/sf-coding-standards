@@ -44,6 +44,8 @@ Business logic only, NO direct SOQL or DML
 - **Exception handling**: Prefer throwing exceptions to Consumer layer; only log when intentionally handling errors (e.g., warning for bad config item to avoid failing entire process)
 - **Providers**: Use same pattern for external integrations (e.g., `IWeatherProvider`, `WeatherProviderImpl`, `WeatherProvider`) - isolates external dependencies from core business logic
 
+> **Exception**: Not required for encapsulated, self-contained UI utility components. The standard four-layer fflib pattern applies to domain-driven business logic, not to utility/display components.
+
 #### Consumer Layer (`batch/`, `queueable/`, `controllers/`, `triggers/`, `invocables/`)
 
 Thin orchestrators
