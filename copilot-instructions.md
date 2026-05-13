@@ -29,7 +29,7 @@ These constraints must **NEVER** be violated:
 - **Never** put SOQL in Service classes - always delegate to Selector
 - **Never** put business logic in Batch/Queueable/Controller/REST resources - delegate to Service
 - **Never** use `new ServiceImpl()` or `new Selector()` - always use factory methods
-- **Never** mix K&R and Allman braces - consistent Allman style only
+- **Never** mix brace styles - consistent K&R style only
 - **Never** use batch-from-batch - use `!System.isBatch()` guard or chain to queueable
 
 ### Testing & Logging
@@ -108,7 +108,7 @@ See [docs/architecture.md](docs/architecture.md) for complete patterns and workf
 
 ### Code Style Essentials
 
-- **Allman braces** - opening brace on new line, always
+- **K&R braces** - opening brace on same line, always
 - **Naming**: `PascalCase` classes, `camelCase` methods, `UPPER_SNAKE_CASE` constants
 - **Interfaces**: Prefix with `I` (e.g., `IAccountService`)
 - **ApexDoc required** for all public APIs with proper tags

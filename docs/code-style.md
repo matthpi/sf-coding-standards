@@ -16,34 +16,33 @@
 - **Trigger Handlers**: Suffix with `TriggerHandler` (e.g., `AccountTriggerHandler`)
 - **DTO/Wrapper Classes**: Suffix with `Wrapper` or `DTO` recommended for clarity (e.g., `AccountWrapper`, `RequestDTO`)
 
-## Allman-Style Braces
+## K&R-Style Braces
 
-**Always use Allman style** (opening brace on new line):
+**Always use K&R style** (opening brace on same line):
 
 ```apex
 // CORRECT
+public void processRecords() {
+    if (records.isEmpty()) {
+        return;
+    }
+
+    for (Account acc : accounts) {
+        // process
+    }
+}
+
+// WRONG - Allman style not allowed
 public void processRecords()
 {
     if (records.isEmpty())
     {
         return;
     }
-
-    for (Account acc : accounts)
-    {
-        // process
-    }
-}
-
-// WRONG - K&R style not allowed
-public void processRecords() {
-    if (records.isEmpty()) {
-        return;
-    }
 }
 ```
 
-**Never mix K&R and Allman braces** - consistent Allman style only.
+**Never mix brace styles** - consistent K&R style only.
 
 ## Code Organization Patterns
 

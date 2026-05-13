@@ -47,7 +47,7 @@ Please open an issue with:
 ### Style Conventions
 
 - **Headers**: Use sentence case (not title case)
-- **Code examples**: Always use Allman-style braces
+- **Code examples**: Always use K&R style braces
 - **Emphasis**: Use **bold** for critical constraints, *italics* for emphasis
 - **Lists**: Use `-` for unordered lists, numbers for ordered/sequential steps
 - **Links**: Use relative paths for internal links
